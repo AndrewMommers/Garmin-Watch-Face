@@ -32,6 +32,13 @@ module Rez {
     } // Layouts
 
     module Strings {
+        (:initialized) var no_gps_signal as ResourceId;
+        (:initialized) var hr_label as ResourceId;
+        (:initialized) var steps_label as ResourceId;
+        (:initialized) var zulu_label as ResourceId;
+        (:initialized) var alt_label as ResourceId;
+        (:initialized) var batt_label as ResourceId;
+        (:initialized) var dist_label as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 
