@@ -1,11 +1,23 @@
 <strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <string id="AppName">Mommers Military</string>
 
-    <string id="hr_label">HR</string>
-    <string id="batt_label">BATT</string>
-    <string id="alt_label">ALT</string>
-    <string id="steps_label">STEPS</string>
-    <string id="dist_label">DIST</string>
-    <string id="zulu_label">ZULU</string>
-    <string id="no_gps_signal">NO GPS</string>
+    <string id="GpsTitle">GPS</string>
+    <string id="NoSignal">NO SIGNAL</string>
+    <string id="HeartRateTitle">Heart Rate:\n</string>
+    <string id="BatteryTitle">Battery:\n</string>
+    <string id="AltitudeTitle">Altitude:\n</string>
+    <string id="ZuluTitle">Zulu:\n</string>
+    <string id="StepsUnit"> Steps</string>
+    <string id="BpmUnit"> bpm</string>
+    <string id="MetersUnit"> M</string>
+
+    <string id="WeatherClear">Clear</string>
+    <string id="WeatherPCloudy">P. Cloudy</string>
+    <string id="WeatherCloudy">Cloudy</string>
+    <string id="WeatherRain">Rain</string>
+    <string id="WeatherSnow">Snow</string>
+    <string id="WeatherTStorm">T-Storm</string>
+    <string id="WeatherWindy">Windy</string>
+    <string id="WeatherFog">Fog</string>
+    <string id="WeatherNA">N/A</string>
 </strings>
