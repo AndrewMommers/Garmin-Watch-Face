@@ -1,4 +1,38 @@
 <layout id="WatchFace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <label id="TimeLabel" x="center" y="160" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
-    <label id="DateLabel" />
+    <label id="TimeLabel" x="center" y="160" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE" />
+    <label id="DateLabel"
+            x="center" y="225"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_LT_GRAY" />
+    
+    <label id="GpsLabel" 
+            x="center" y="30"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_LT_GRAY" />
+    
+    <label id="HeartRateLabel"
+            x="104" y="280"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_LT_GRAY" />
+    <label id="StepsLabel"
+            x="104" y="320"
+            font="Gfx.FONT_TINY"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_WHITE" />
+    
+    <label id="BatteryLevel"
+            x="312" y="280"
+            font="Gfx.FONT_TINY"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_WHITE" />
+    <label id="AltitudeLabel"
+            x="312" y="320"
+            font="Gfx.FONT_TINY"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_WHITE" />
+    <label id="ZuluLabel"
+            x="center" y="360"
+            font="Gfx.FONT_TINY"
+            justification="Gfx.TEXT_JUSTIFY_CENTER"
+            color="Gfx.COLOR_RED" />
 </layout>

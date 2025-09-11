@@ -11,11 +11,23 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_BLUE, :locX=>(448 * 0.5), :locY=>160, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_NUMBER_THAI_HOT});
+            var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Gfx.COLOR_WHITE, :locX=>(448 * 0.5), :locY=>160, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_NUMBER_THAI_HOT});
 
-            var rez_cmp_local_text_DateLabel = new WatchUi.Text({:identifier=>"DateLabel", :font=>Graphics.FONT_MEDIUM});
+            var rez_cmp_local_text_DateLabel = new WatchUi.Text({:identifier=>"DateLabel", :color=>Gfx.COLOR_LT_GRAY, :locX=>(448 * 0.5), :locY=>225, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            return [rez_cmp_local_text_TimeLabel, rez_cmp_local_text_DateLabel] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_GpsLabel = new WatchUi.Text({:identifier=>"GpsLabel", :color=>Gfx.COLOR_LT_GRAY, :locX=>(448 * 0.5), :locY=>30, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_HeartRateLabel = new WatchUi.Text({:identifier=>"HeartRateLabel", :color=>Gfx.COLOR_LT_GRAY, :locX=>104, :locY=>280, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_StepsLabel = new WatchUi.Text({:identifier=>"StepsLabel", :color=>Gfx.COLOR_WHITE, :locX=>104, :locY=>320, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
+
+            var rez_cmp_local_text_BatteryLevel = new WatchUi.Text({:identifier=>"BatteryLevel", :color=>Gfx.COLOR_WHITE, :locX=>312, :locY=>280, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
+
+            var rez_cmp_local_text_AltitudeLabel = new WatchUi.Text({:identifier=>"AltitudeLabel", :color=>Gfx.COLOR_WHITE, :locX=>312, :locY=>320, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
+
+            var rez_cmp_local_text_ZuluLabel = new WatchUi.Text({:identifier=>"ZuluLabel", :color=>Gfx.COLOR_RED, :locX=>(448 * 0.5), :locY=>360, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
+
+            return [rez_cmp_local_text_TimeLabel, rez_cmp_local_text_DateLabel, rez_cmp_local_text_GpsLabel, rez_cmp_local_text_HeartRateLabel, rez_cmp_local_text_StepsLabel, rez_cmp_local_text_BatteryLevel, rez_cmp_local_text_AltitudeLabel, rez_cmp_local_text_ZuluLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
