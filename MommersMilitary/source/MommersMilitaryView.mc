@@ -12,6 +12,17 @@ class MommersMilitaryView extends WatchUi.WatchFace {
 
     // Member variable to hold the custom icon font
     private var iconsFont;
+    
+    // Member variables to hold strings loaded from resources
+    private var strHeartRateTitle;
+    private var strBatteryTitle;
+    private var strAltitudeTitle;
+    private var strZuluTitle;
+    private var strGpsTitle;
+    private var strNoSignal;
+    private var strStepsUnit;
+    private var strBpmUnit;
+    private var strMetersUnit;
 
     function initialize() {
         WatchFace.initialize();
@@ -20,8 +31,20 @@ class MommersMilitaryView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
+        
         // Load the custom font from resources and store it
         iconsFont = WatchUi.loadResource(Rez.Fonts.IconsFont);
+        
+        // Load all strings from resources once to improve performance
+        strHeartRateTitle = WatchUi.loadResource(Rez.Strings.HeartRateTitle);
+        strBatteryTitle = WatchUi.loadResource(Rez.Strings.BatteryTitle);
+        strAltitudeTitle = WatchUi.loadResource(Rez.Strings.AltitudeTitle);
+        strZuluTitle = WatchUi.loadResource(Rez.Strings.ZuluTitle);
+        strGpsTitle = WatchUi.loadResource(Rez.Strings.GpsTitle);
+        strNoSignal = WatchUi.loadResource(Rez.Strings.NoSignal);
+        strStepsUnit = WatchUi.loadResource(Rez.Strings.StepsUnit);
+        strBpmUnit = WatchUi.loadResource(Rez.Strings.BpmUnit);
+        strMetersUnit = WatchUi.loadResource(Rez.Strings.MetersUnit);
     }
 
     // Update the view
@@ -47,33 +70,30 @@ class MommersMilitaryView extends WatchUi.WatchFace {
         var dateString = Lang.format("$1$, $2$ $3$ $4$", [info.day_of_week, info.day, info.month, info.year]);
         (View.findDrawableById("DateLabel") as Text).setText(dateString);
         
-        // Get Activity Info (contains HR, Steps, and Altitude)
         var activityInfo = ActivityMonitor.getInfo();
 
         var heartRate = activityInfo.currentHeartRate;
-        var hrString = (heartRate != null) ? heartRate.toString() + " bpm" : "-- bpm";
-        (View.findDrawableById("HeartRateLabel") as Text).setText("Heart Rate:\n" + hrString);
+        var hrString = (heartRate != null) ? heartRate.toString() + strBpmUnit : "--" + strBpmUnit;
+        (View.findDrawableById("HeartRateLabel") as Text).setText(strHeartRateTitle + hrString);
 
-        // ** ADDED STEPS COUNTER **
         var steps = activityInfo.steps;
         var stepsString = (steps != null) ? steps.toString() : "0";
-        (View.findDrawableById("StepsLabel") as Text).setText(stepsString + " Steps");
+        (View.findDrawableById("StepsLabel") as Text).setText(stepsString + strStepsUnit);
 
         var battery = System.getSystemStats().battery;
-        // ** FIXED BATTERY ID **
-        (View.findDrawableById("BatteryLevel") as Text).setText("Battery:\n" + battery.format("%d") + "%");
+        (View.findDrawableById("BatteryLevel") as Text).setText(strBatteryTitle + battery.format("%d") + "%");
 
         var altitude = activityInfo.altitude;
-        var altString = (altitude != null) ? altitude.format("%d") + " M" : "-- M";
-        (View.findDrawableById("AltitudeLabel") as Text).setText("Altitude:\n" + altString);
+        var altString = (altitude != null) ? altitude.format("%d") + strMetersUnit : "--" + strMetersUnit;
+        (View.findDrawableById("AltitudeLabel") as Text).setText(strAltitudeTitle + altString);
         
         var utc = Gregorian.utcInfo(now, Time.FORMAT_SHORT);
         var zuluString = Lang.format("$1$:$2$ Z", [utc.hour.format("%02d"), utc.min.format("%02d")]);
-        (View.findDrawableById("ZuluLabel") as Text).setText("Zulu:\n" + zuluString);
+        (View.findDrawableById("ZuluLabel") as Text).setText(strZuluTitle + zuluString);
 
-        (View.findDrawableById("GpsTitleLabel") as Text).setText("GPS");
+        (View.findDrawableById("GpsTitleLabel") as Text).setText(strGpsTitle);
         var positionInfo = Position.getInfo();
-        var gpsString = "NO SIGNAL";
+        var gpsString = strNoSignal;
         if (positionInfo != null && positionInfo.accuracy != null && positionInfo.accuracy > Position.QUALITY_POOR) {
             var location = positionInfo.position.toDegrees();
             gpsString = formatLocation(location[0], location[1]);
@@ -82,7 +102,6 @@ class MommersMilitaryView extends WatchUi.WatchFace {
 
         var conditions = Weather.getCurrentConditions();
         if (conditions != null) {
-            // ** FIXED WEATHER ICON ID **
             var weatherIcon = View.findDrawableById("WeatherIconLabel") as Text;
             weatherIcon.setFont(iconsFont);
             var codepoint = getWeatherIconCodepoint(conditions.condition);
@@ -90,7 +109,6 @@ class MommersMilitaryView extends WatchUi.WatchFace {
             
             var temp = conditions.temperature;
             var tempString = (temp != null) ? temp.format("%d") + "°C" : "--°C";
-            // A simple way to get a text description for weather condition
             var conditionString = getConditionString(conditions.condition);
             (View.findDrawableById("WeatherLabel") as Text).setText(tempString + " " + conditionString);
         }
@@ -103,28 +121,29 @@ class MommersMilitaryView extends WatchUi.WatchFace {
     }
 
     function getWeatherIconCodepoint(condition as Number) as Number {
-        if (condition == Weather.CONDITION_CLEAR) { return 0xe518; } // sunny
-        if (condition == Weather.CONDITION_PARTLY_CLOUDY) { return 0xe2bd; } // cloud
-        if (condition == Weather.CONDITION_CLOUDY) { return 0xe2bd; } // cloud
-        if (condition == Weather.CONDITION_RAIN) { return 0xf047; } // rainy
-        if (condition == Weather.CONDITION_SNOW) { return 0xe81a; } // cloudy_snowing
-        if (condition == Weather.CONDITION_THUNDERSTORM) { return 0xeb7d; } // thunderstorm
-        if (condition == Weather.CONDITION_WINDY) { return 0xe867; } // air
-        if (condition == Weather.CONDITION_FOG) { return 0xe317; } // fog
-        return 0xe518; // Default to sunny
+        // ... (This function remains the same as before) ...
+        if (condition == Weather.CONDITION_CLEAR) { return 0xe518; }
+        if (condition == Weather.CONDITION_PARTLY_CLOUDY) { return 0xe2bd; }
+        if (condition == Weather.CONDITION_CLOUDY) { return 0xe2bd; }
+        if (condition == Weather.CONDITION_RAIN) { return 0xf047; }
+        if (condition == Weather.CONDITION_SNOW) { return 0xe81a; }
+        if (condition == Weather.CONDITION_THUNDERSTORM) { return 0xeb7d; }
+        if (condition == Weather.CONDITION_WINDY) { return 0xe867; }
+        if (condition == Weather.CONDITION_FOG) { return 0xe317; }
+        return 0xe518;
     }
     
-    // ** ADDED HELPER FOR WEATHER TEXT **
     function getConditionString(condition as Number) as String {
-        if (condition == Weather.CONDITION_CLEAR) { return "Clear"; }
-        if (condition == Weather.CONDITION_PARTLY_CLOUDY) { return "P. Cloudy"; }
-        if (condition == Weather.CONDITION_CLOUDY) { return "Cloudy"; }
-        if (condition == Weather.CONDITION_RAIN) { return "Rain"; }
-        if (condition == Weather.CONDITION_SNOW) { return "Snow"; }
-        if (condition == Weather.CONDITION_THUNDERSTORM) { return "T-Storm"; }
-        if (condition == Weather.CONDITION_WINDY) { return "Windy"; }
-        if (condition == Weather.CONDITION_FOG) { return "Fog"; }
-        return "N/A";
+        // This function now loads text from your strings.xml file
+        if (condition == Weather.CONDITION_CLEAR) { return WatchUi.loadResource(Rez.Strings.WeatherClear); }
+        if (condition == Weather.CONDITION_PARTLY_CLOUDY) { return WatchUi.loadResource(Rez.Strings.WeatherPCloudy); }
+        if (condition == Weather.CONDITION_CLOUDY) { return WatchUi.loadResource(Rez.Strings.WeatherCloudy); }
+        if (condition == Weather.CONDITION_RAIN) { return WatchUi.loadResource(Rez.Strings.WeatherRain); }
+        if (condition == Weather.CONDITION_SNOW) { return WatchUi.loadResource(Rez.Strings.WeatherSnow); }
+        if (condition == Weather.CONDITION_THUNDERSTORM) { return WatchUi.loadResource(Rez.Strings.WeatherTStorm); }
+        if (condition == Weather.CONDITION_WINDY) { return WatchUi.loadResource(Rez.Strings.WeatherWindy); }
+        if (condition == Weather.CONDITION_FOG) { return WatchUi.loadResource(Rez.Strings.WeatherFog); }
+        return WatchUi.loadResource(Rez.Strings.WeatherNA);
     }
 
     function onShow() as Void {}
