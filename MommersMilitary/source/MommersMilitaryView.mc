@@ -120,18 +120,20 @@ class MommersMilitaryView extends WatchUi.WatchFace {
         return latStr + ", " + lonStr;
     }
 
-    function getWeatherIconCodepoint(condition as Number) as Number {
-        // ... (This function remains the same as before) ...
-        if (condition == Weather.CONDITION_CLEAR) { return 0xe518; }
-        if (condition == Weather.CONDITION_PARTLY_CLOUDY) { return 0xe2bd; }
-        if (condition == Weather.CONDITION_CLOUDY) { return 0xe2bd; }
-        if (condition == Weather.CONDITION_RAIN) { return 0xf047; }
-        if (condition == Weather.CONDITION_SNOW) { return 0xe81a; }
-        if (condition == Weather.CONDITION_THUNDERSTORM) { return 0xeb7d; }
-        if (condition == Weather.CONDITION_WINDY) { return 0xe867; }
-        if (condition == Weather.CONDITION_FOG) { return 0xe317; }
-        return 0xe518;
-    }
+    // Helper function to map weather condition to a KICKSTAND ICONS codepoint
+function getWeatherIconCodepoint(condition as Number) as Number {
+    if (condition == Weather.CONDITION_CLEAR) { return 0xF00D; } // wi-day-sunny
+    if (condition == Weather.CONDITION_PARTLY_CLOUDY) { return 0xF002; } // wi-day-cloudy
+    if (condition == Weather.CONDITION_CLOUDY) { return 0xF013; } // wi-cloudy
+    if (condition == Weather.CONDITION_RAIN) { return 0xF019; } // wi-rain
+    if (condition == Weather.CONDITION_SNOW) { return 0xF01B; } // wi-snow
+    if (condition == Weather.CONDITION_THUNDERSTORM) { return 0xF01E; } // wi-thunderstorm
+    if (condition == Weather.CONDITION_WINDY) { return 0xF050; } // wi-strong-wind
+    if (condition == Weather.CONDITION_FOG) { return 0xF014; } // wi-fog
+    
+    // Default to sunny if the condition is unknown
+    return 0xF00D;
+}
     
     function getConditionString(condition as Number) as String {
         // This function now loads text from your strings.xml file

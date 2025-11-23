@@ -1098,410 +1098,410 @@ D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_
         ret %tmp.35;
 D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_117_66_121_4_stop:
     }
-    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 123; @symbol_functiondef = [getWeatherIconCodepoint,123,13,36]; @symbol_param<0> = [condition,123,37,46]; @symbol_param<0>_type<0> = [Number,123,50,56]; @symbol_return<0> = [Number,123,61,67]; ]
+    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 124; @symbol_functiondef = [getWeatherIconCodepoint,124,9,32]; @symbol_param<0> = [condition,124,33,42]; @symbol_param<0>_type<0> = [Number,124,46,52]; @symbol_return<0> = [Number,124,57,63]; ]
     function getWeatherIconCodepoint(condition as Number) as Number {
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_123_68_134_4_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 125 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_8_125_67_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_124_64_136_0_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 125 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_4_125_63_if_stmt:
         %tmp.1 = lgetv %condition;
-        symbol [ condition %tmp.1 125 12 21 ];
-        symbol [ Weather %tmp.2 125 25 32 ];
+        symbol [ condition %tmp.1 125 8 17 ];
+        symbol [ Weather %tmp.2 125 21 28 ];
         %tmp.2 = getm $.Toybox.Weather;
-        symbol [ CONDITION_CLEAR %tmp.3 125 33 48 ];
+        symbol [ CONDITION_CLEAR %tmp.3 125 29 44 ];
         %tmp.3 = getv %tmp.2 :CONDITION_CLEAR;
         %tmp.4 = eq %tmp.1 %tmp.3;
-        bf %tmp.4 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_8_125_67_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_8_125_67_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_50_125_67_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 125 52 ]
-        %tmp.5 = 0xe518;
+        bf %tmp.4 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_4_125_63_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_4_125_63_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_46_125_63_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 125 48 ]
+        %tmp.5 = 0xF00D;
         ret %tmp.5;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_50_125_67_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_8_125_67_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_8_125_67_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 126 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_8_126_75_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_46_125_63_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_4_125_63_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_125_4_125_63_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 126 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_4_126_71_if_stmt:
         %tmp.6 = lgetv %condition;
-        symbol [ condition %tmp.6 126 12 21 ];
-        symbol [ Weather %tmp.7 126 25 32 ];
+        symbol [ condition %tmp.6 126 8 17 ];
+        symbol [ Weather %tmp.7 126 21 28 ];
         %tmp.7 = getm $.Toybox.Weather;
-        symbol [ CONDITION_PARTLY_CLOUDY %tmp.8 126 33 56 ];
+        symbol [ CONDITION_PARTLY_CLOUDY %tmp.8 126 29 52 ];
         %tmp.8 = getv %tmp.7 :CONDITION_PARTLY_CLOUDY;
         %tmp.9 = eq %tmp.6 %tmp.8;
-        bf %tmp.9 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_8_126_75_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_8_126_75_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_58_126_75_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 126 60 ]
-        %tmp.10 = 0xe2bd;
+        bf %tmp.9 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_4_126_71_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_4_126_71_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_54_126_71_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 126 56 ]
+        %tmp.10 = 0xF002;
         ret %tmp.10;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_58_126_75_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_8_126_75_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_8_126_75_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 127 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_8_127_68_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_54_126_71_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_4_126_71_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_126_4_126_71_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 127 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_4_127_64_if_stmt:
         %tmp.11 = lgetv %condition;
-        symbol [ condition %tmp.11 127 12 21 ];
-        symbol [ Weather %tmp.12 127 25 32 ];
+        symbol [ condition %tmp.11 127 8 17 ];
+        symbol [ Weather %tmp.12 127 21 28 ];
         %tmp.12 = getm $.Toybox.Weather;
-        symbol [ CONDITION_CLOUDY %tmp.13 127 33 49 ];
+        symbol [ CONDITION_CLOUDY %tmp.13 127 29 45 ];
         %tmp.13 = getv %tmp.12 :CONDITION_CLOUDY;
         %tmp.14 = eq %tmp.11 %tmp.13;
-        bf %tmp.14 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_8_127_68_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_8_127_68_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_51_127_68_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 127 53 ]
-        %tmp.15 = 0xe2bd;
+        bf %tmp.14 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_4_127_64_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_4_127_64_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_47_127_64_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 127 49 ]
+        %tmp.15 = 0xF013;
         ret %tmp.15;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_51_127_68_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_8_127_68_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_8_127_68_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 128 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_8_128_66_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_47_127_64_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_4_127_64_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_127_4_127_64_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 128 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_4_128_62_if_stmt:
         %tmp.16 = lgetv %condition;
-        symbol [ condition %tmp.16 128 12 21 ];
-        symbol [ Weather %tmp.17 128 25 32 ];
+        symbol [ condition %tmp.16 128 8 17 ];
+        symbol [ Weather %tmp.17 128 21 28 ];
         %tmp.17 = getm $.Toybox.Weather;
-        symbol [ CONDITION_RAIN %tmp.18 128 33 47 ];
+        symbol [ CONDITION_RAIN %tmp.18 128 29 43 ];
         %tmp.18 = getv %tmp.17 :CONDITION_RAIN;
         %tmp.19 = eq %tmp.16 %tmp.18;
-        bf %tmp.19 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_8_128_66_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_8_128_66_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_49_128_66_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 128 51 ]
-        %tmp.20 = 0xf047;
+        bf %tmp.19 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_4_128_62_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_4_128_62_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_45_128_62_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 128 47 ]
+        %tmp.20 = 0xF019;
         ret %tmp.20;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_49_128_66_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_8_128_66_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_8_128_66_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 129 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_8_129_66_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_45_128_62_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_4_128_62_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_128_4_128_62_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 129 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_4_129_62_if_stmt:
         %tmp.21 = lgetv %condition;
-        symbol [ condition %tmp.21 129 12 21 ];
-        symbol [ Weather %tmp.22 129 25 32 ];
+        symbol [ condition %tmp.21 129 8 17 ];
+        symbol [ Weather %tmp.22 129 21 28 ];
         %tmp.22 = getm $.Toybox.Weather;
-        symbol [ CONDITION_SNOW %tmp.23 129 33 47 ];
+        symbol [ CONDITION_SNOW %tmp.23 129 29 43 ];
         %tmp.23 = getv %tmp.22 :CONDITION_SNOW;
         %tmp.24 = eq %tmp.21 %tmp.23;
-        bf %tmp.24 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_8_129_66_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_8_129_66_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_49_129_66_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 129 51 ]
-        %tmp.25 = 0xe81a;
+        bf %tmp.24 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_4_129_62_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_4_129_62_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_45_129_62_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 129 47 ]
+        %tmp.25 = 0xF01B;
         ret %tmp.25;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_49_129_66_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_8_129_66_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_8_129_66_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 130 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_8_130_74_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_45_129_62_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_4_129_62_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_129_4_129_62_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 130 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_4_130_70_if_stmt:
         %tmp.26 = lgetv %condition;
-        symbol [ condition %tmp.26 130 12 21 ];
-        symbol [ Weather %tmp.27 130 25 32 ];
+        symbol [ condition %tmp.26 130 8 17 ];
+        symbol [ Weather %tmp.27 130 21 28 ];
         %tmp.27 = getm $.Toybox.Weather;
-        symbol [ CONDITION_THUNDERSTORM %tmp.28 130 33 55 ];
+        symbol [ CONDITION_THUNDERSTORM %tmp.28 130 29 51 ];
         %tmp.28 = getv %tmp.27 :CONDITION_THUNDERSTORM;
         %tmp.29 = eq %tmp.26 %tmp.28;
-        bf %tmp.29 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_8_130_74_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_8_130_74_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_57_130_74_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 130 59 ]
-        %tmp.30 = 0xeb7d;
+        bf %tmp.29 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_4_130_70_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_4_130_70_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_53_130_70_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 130 55 ]
+        %tmp.30 = 0xF01E;
         ret %tmp.30;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_57_130_74_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_8_130_74_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_8_130_74_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 131 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_8_131_67_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_53_130_70_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_4_130_70_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_130_4_130_70_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 131 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_4_131_63_if_stmt:
         %tmp.31 = lgetv %condition;
-        symbol [ condition %tmp.31 131 12 21 ];
-        symbol [ Weather %tmp.32 131 25 32 ];
+        symbol [ condition %tmp.31 131 8 17 ];
+        symbol [ Weather %tmp.32 131 21 28 ];
         %tmp.32 = getm $.Toybox.Weather;
-        symbol [ CONDITION_WINDY %tmp.33 131 33 48 ];
+        symbol [ CONDITION_WINDY %tmp.33 131 29 44 ];
         %tmp.33 = getv %tmp.32 :CONDITION_WINDY;
         %tmp.34 = eq %tmp.31 %tmp.33;
-        bf %tmp.34 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_8_131_67_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_8_131_67_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_50_131_67_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 131 52 ]
-        %tmp.35 = 0xe867;
+        bf %tmp.34 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_4_131_63_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_4_131_63_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_46_131_63_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 131 48 ]
+        %tmp.35 = 0xF050;
         ret %tmp.35;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_50_131_67_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_8_131_67_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_8_131_67_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 132 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_8_132_65_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_46_131_63_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_4_131_63_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_131_4_131_63_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 132 4 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_4_132_61_if_stmt:
         %tmp.36 = lgetv %condition;
-        symbol [ condition %tmp.36 132 12 21 ];
-        symbol [ Weather %tmp.37 132 25 32 ];
+        symbol [ condition %tmp.36 132 8 17 ];
+        symbol [ Weather %tmp.37 132 21 28 ];
         %tmp.37 = getm $.Toybox.Weather;
-        symbol [ CONDITION_FOG %tmp.38 132 33 46 ];
+        symbol [ CONDITION_FOG %tmp.38 132 29 42 ];
         %tmp.38 = getv %tmp.37 :CONDITION_FOG;
         %tmp.39 = eq %tmp.36 %tmp.38;
-        bf %tmp.39 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_8_132_65_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_8_132_65_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_48_132_65_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 132 50 ]
-        %tmp.40 = 0xe317;
+        bf %tmp.39 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_4_132_61_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_4_132_61_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_44_132_61_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 132 46 ]
+        %tmp.40 = 0xF014;
         ret %tmp.40;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_48_132_65_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_8_132_65_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_8_132_65_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 133 8 ]
-        %tmp.41 = 0xe518;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_44_132_61_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_4_132_61_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_132_4_132_61_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 135 4 ]
+        %tmp.41 = 0xF00D;
         ret %tmp.41;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_123_68_134_4_stop:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_124_64_136_0_stop:
     }
-    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 136; @symbol_functiondef = [getConditionString,136,13,31]; @symbol_param<0> = [condition,136,32,41]; @symbol_param<0>_type<0> = [Number,136,45,51]; @symbol_return<0> = [String,136,56,62]; ]
+    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 138; @symbol_functiondef = [getConditionString,138,13,31]; @symbol_param<0> = [condition,138,32,41]; @symbol_param<0>_type<0> = [Number,138,45,51]; @symbol_return<0> = [String,138,56,62]; ]
     function getConditionString(condition as Number) as String {
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_136_63_147_4_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 138 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_8_138_107_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_63_149_4_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 140 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_107_if_stmt:
         %tmp.1 = lgetv %condition;
-        symbol [ condition %tmp.1 138 12 21 ];
-        symbol [ Weather %tmp.2 138 25 32 ];
+        symbol [ condition %tmp.1 140 12 21 ];
+        symbol [ Weather %tmp.2 140 25 32 ];
         %tmp.2 = getm $.Toybox.Weather;
-        symbol [ CONDITION_CLEAR %tmp.3 138 33 48 ];
+        symbol [ CONDITION_CLEAR %tmp.3 140 33 48 ];
         %tmp.3 = getv %tmp.2 :CONDITION_CLEAR;
         %tmp.4 = eq %tmp.1 %tmp.3;
-        bf %tmp.4 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_8_138_107_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_8_138_107_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_50_138_107_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 138 52 ]
-        symbol [ WatchUi %tmp.5 138 59 66 ];
+        bf %tmp.4 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_107_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_107_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_50_140_107_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 140 52 ]
+        symbol [ WatchUi %tmp.5 140 59 66 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.6 138 67 79 ];
+        symbol [ loadResource %tmp.6 140 67 79 ];
         %tmp.6 = getv function %tmp.5 :loadResource;
-        symbol [ Rez %tmp.8 138 80 83 ];
+        symbol [ Rez %tmp.8 140 80 83 ];
         %tmp.8 = getv ? :Rez;
-        symbol [ Strings %tmp.9 138 84 91 ];
+        symbol [ Strings %tmp.9 140 84 91 ];
         %tmp.9 = getv %tmp.8 :Strings;
-        symbol [ WeatherClear %tmp.10 138 92 104 ];
+        symbol [ WeatherClear %tmp.10 140 92 104 ];
         %tmp.10 = getv %tmp.9 :WeatherClear;
         %tmp.11 = invoke %tmp.5 %tmp.6(%tmp.10);
         ret %tmp.11;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_50_138_107_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_8_138_107_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_8_138_107_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 139 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_8_139_117_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_50_140_107_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_107_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_107_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 141 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_117_if_stmt:
         %tmp.12 = lgetv %condition;
-        symbol [ condition %tmp.12 139 12 21 ];
-        symbol [ Weather %tmp.13 139 25 32 ];
+        symbol [ condition %tmp.12 141 12 21 ];
+        symbol [ Weather %tmp.13 141 25 32 ];
         %tmp.13 = getm $.Toybox.Weather;
-        symbol [ CONDITION_PARTLY_CLOUDY %tmp.14 139 33 56 ];
+        symbol [ CONDITION_PARTLY_CLOUDY %tmp.14 141 33 56 ];
         %tmp.14 = getv %tmp.13 :CONDITION_PARTLY_CLOUDY;
         %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_8_139_117_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_8_139_117_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_58_139_117_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 139 60 ]
-        symbol [ WatchUi %tmp.16 139 67 74 ];
+        bf %tmp.15 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_117_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_117_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_58_141_117_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 141 60 ]
+        symbol [ WatchUi %tmp.16 141 67 74 ];
         %tmp.16 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.17 139 75 87 ];
+        symbol [ loadResource %tmp.17 141 75 87 ];
         %tmp.17 = getv function %tmp.16 :loadResource;
-        symbol [ Rez %tmp.19 139 88 91 ];
+        symbol [ Rez %tmp.19 141 88 91 ];
         %tmp.19 = getv ? :Rez;
-        symbol [ Strings %tmp.20 139 92 99 ];
+        symbol [ Strings %tmp.20 141 92 99 ];
         %tmp.20 = getv %tmp.19 :Strings;
-        symbol [ WeatherPCloudy %tmp.21 139 100 114 ];
+        symbol [ WeatherPCloudy %tmp.21 141 100 114 ];
         %tmp.21 = getv %tmp.20 :WeatherPCloudy;
         %tmp.22 = invoke %tmp.16 %tmp.17(%tmp.21);
         ret %tmp.22;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_58_139_117_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_8_139_117_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_139_8_139_117_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 140 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_109_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_58_141_117_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_117_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_117_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 142 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_109_if_stmt:
         %tmp.23 = lgetv %condition;
-        symbol [ condition %tmp.23 140 12 21 ];
-        symbol [ Weather %tmp.24 140 25 32 ];
+        symbol [ condition %tmp.23 142 12 21 ];
+        symbol [ Weather %tmp.24 142 25 32 ];
         %tmp.24 = getm $.Toybox.Weather;
-        symbol [ CONDITION_CLOUDY %tmp.25 140 33 49 ];
+        symbol [ CONDITION_CLOUDY %tmp.25 142 33 49 ];
         %tmp.25 = getv %tmp.24 :CONDITION_CLOUDY;
         %tmp.26 = eq %tmp.23 %tmp.25;
-        bf %tmp.26 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_109_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_109_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_51_140_109_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 140 53 ]
-        symbol [ WatchUi %tmp.27 140 60 67 ];
+        bf %tmp.26 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_109_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_109_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_51_142_109_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 142 53 ]
+        symbol [ WatchUi %tmp.27 142 60 67 ];
         %tmp.27 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.28 140 68 80 ];
+        symbol [ loadResource %tmp.28 142 68 80 ];
         %tmp.28 = getv function %tmp.27 :loadResource;
-        symbol [ Rez %tmp.30 140 81 84 ];
+        symbol [ Rez %tmp.30 142 81 84 ];
         %tmp.30 = getv ? :Rez;
-        symbol [ Strings %tmp.31 140 85 92 ];
+        symbol [ Strings %tmp.31 142 85 92 ];
         %tmp.31 = getv %tmp.30 :Strings;
-        symbol [ WeatherCloudy %tmp.32 140 93 106 ];
+        symbol [ WeatherCloudy %tmp.32 142 93 106 ];
         %tmp.32 = getv %tmp.31 :WeatherCloudy;
         %tmp.33 = invoke %tmp.27 %tmp.28(%tmp.32);
         ret %tmp.33;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_51_140_109_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_109_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_140_8_140_109_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 141 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_105_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_51_142_109_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_109_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_109_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 143 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_105_if_stmt:
         %tmp.34 = lgetv %condition;
-        symbol [ condition %tmp.34 141 12 21 ];
-        symbol [ Weather %tmp.35 141 25 32 ];
+        symbol [ condition %tmp.34 143 12 21 ];
+        symbol [ Weather %tmp.35 143 25 32 ];
         %tmp.35 = getm $.Toybox.Weather;
-        symbol [ CONDITION_RAIN %tmp.36 141 33 47 ];
+        symbol [ CONDITION_RAIN %tmp.36 143 33 47 ];
         %tmp.36 = getv %tmp.35 :CONDITION_RAIN;
         %tmp.37 = eq %tmp.34 %tmp.36;
-        bf %tmp.37 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_105_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_105_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_49_141_105_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 141 51 ]
-        symbol [ WatchUi %tmp.38 141 58 65 ];
+        bf %tmp.37 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_105_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_105_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_49_143_105_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 143 51 ]
+        symbol [ WatchUi %tmp.38 143 58 65 ];
         %tmp.38 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.39 141 66 78 ];
+        symbol [ loadResource %tmp.39 143 66 78 ];
         %tmp.39 = getv function %tmp.38 :loadResource;
-        symbol [ Rez %tmp.41 141 79 82 ];
+        symbol [ Rez %tmp.41 143 79 82 ];
         %tmp.41 = getv ? :Rez;
-        symbol [ Strings %tmp.42 141 83 90 ];
+        symbol [ Strings %tmp.42 143 83 90 ];
         %tmp.42 = getv %tmp.41 :Strings;
-        symbol [ WeatherRain %tmp.43 141 91 102 ];
+        symbol [ WeatherRain %tmp.43 143 91 102 ];
         %tmp.43 = getv %tmp.42 :WeatherRain;
         %tmp.44 = invoke %tmp.38 %tmp.39(%tmp.43);
         ret %tmp.44;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_49_141_105_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_105_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_141_8_141_105_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 142 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_105_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_49_143_105_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_105_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_105_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 144 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_105_if_stmt:
         %tmp.45 = lgetv %condition;
-        symbol [ condition %tmp.45 142 12 21 ];
-        symbol [ Weather %tmp.46 142 25 32 ];
+        symbol [ condition %tmp.45 144 12 21 ];
+        symbol [ Weather %tmp.46 144 25 32 ];
         %tmp.46 = getm $.Toybox.Weather;
-        symbol [ CONDITION_SNOW %tmp.47 142 33 47 ];
+        symbol [ CONDITION_SNOW %tmp.47 144 33 47 ];
         %tmp.47 = getv %tmp.46 :CONDITION_SNOW;
         %tmp.48 = eq %tmp.45 %tmp.47;
-        bf %tmp.48 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_105_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_105_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_49_142_105_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 142 51 ]
-        symbol [ WatchUi %tmp.49 142 58 65 ];
+        bf %tmp.48 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_105_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_105_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_49_144_105_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 144 51 ]
+        symbol [ WatchUi %tmp.49 144 58 65 ];
         %tmp.49 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.50 142 66 78 ];
+        symbol [ loadResource %tmp.50 144 66 78 ];
         %tmp.50 = getv function %tmp.49 :loadResource;
-        symbol [ Rez %tmp.52 142 79 82 ];
+        symbol [ Rez %tmp.52 144 79 82 ];
         %tmp.52 = getv ? :Rez;
-        symbol [ Strings %tmp.53 142 83 90 ];
+        symbol [ Strings %tmp.53 144 83 90 ];
         %tmp.53 = getv %tmp.52 :Strings;
-        symbol [ WeatherSnow %tmp.54 142 91 102 ];
+        symbol [ WeatherSnow %tmp.54 144 91 102 ];
         %tmp.54 = getv %tmp.53 :WeatherSnow;
         %tmp.55 = invoke %tmp.49 %tmp.50(%tmp.54);
         ret %tmp.55;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_49_142_105_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_105_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_142_8_142_105_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 143 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_115_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_49_144_105_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_105_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_105_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 145 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_115_if_stmt:
         %tmp.56 = lgetv %condition;
-        symbol [ condition %tmp.56 143 12 21 ];
-        symbol [ Weather %tmp.57 143 25 32 ];
+        symbol [ condition %tmp.56 145 12 21 ];
+        symbol [ Weather %tmp.57 145 25 32 ];
         %tmp.57 = getm $.Toybox.Weather;
-        symbol [ CONDITION_THUNDERSTORM %tmp.58 143 33 55 ];
+        symbol [ CONDITION_THUNDERSTORM %tmp.58 145 33 55 ];
         %tmp.58 = getv %tmp.57 :CONDITION_THUNDERSTORM;
         %tmp.59 = eq %tmp.56 %tmp.58;
-        bf %tmp.59 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_115_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_115_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_57_143_115_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 143 59 ]
-        symbol [ WatchUi %tmp.60 143 66 73 ];
+        bf %tmp.59 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_115_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_115_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_57_145_115_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 145 59 ]
+        symbol [ WatchUi %tmp.60 145 66 73 ];
         %tmp.60 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.61 143 74 86 ];
+        symbol [ loadResource %tmp.61 145 74 86 ];
         %tmp.61 = getv function %tmp.60 :loadResource;
-        symbol [ Rez %tmp.63 143 87 90 ];
+        symbol [ Rez %tmp.63 145 87 90 ];
         %tmp.63 = getv ? :Rez;
-        symbol [ Strings %tmp.64 143 91 98 ];
+        symbol [ Strings %tmp.64 145 91 98 ];
         %tmp.64 = getv %tmp.63 :Strings;
-        symbol [ WeatherTStorm %tmp.65 143 99 112 ];
+        symbol [ WeatherTStorm %tmp.65 145 99 112 ];
         %tmp.65 = getv %tmp.64 :WeatherTStorm;
         %tmp.66 = invoke %tmp.60 %tmp.61(%tmp.65);
         ret %tmp.66;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_57_143_115_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_115_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_143_8_143_115_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 144 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_107_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_57_145_115_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_115_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_115_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 146 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_8_146_107_if_stmt:
         %tmp.67 = lgetv %condition;
-        symbol [ condition %tmp.67 144 12 21 ];
-        symbol [ Weather %tmp.68 144 25 32 ];
+        symbol [ condition %tmp.67 146 12 21 ];
+        symbol [ Weather %tmp.68 146 25 32 ];
         %tmp.68 = getm $.Toybox.Weather;
-        symbol [ CONDITION_WINDY %tmp.69 144 33 48 ];
+        symbol [ CONDITION_WINDY %tmp.69 146 33 48 ];
         %tmp.69 = getv %tmp.68 :CONDITION_WINDY;
         %tmp.70 = eq %tmp.67 %tmp.69;
-        bf %tmp.70 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_107_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_107_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_50_144_107_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 144 52 ]
-        symbol [ WatchUi %tmp.71 144 59 66 ];
+        bf %tmp.70 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_8_146_107_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_8_146_107_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_50_146_107_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 146 52 ]
+        symbol [ WatchUi %tmp.71 146 59 66 ];
         %tmp.71 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.72 144 67 79 ];
+        symbol [ loadResource %tmp.72 146 67 79 ];
         %tmp.72 = getv function %tmp.71 :loadResource;
-        symbol [ Rez %tmp.74 144 80 83 ];
+        symbol [ Rez %tmp.74 146 80 83 ];
         %tmp.74 = getv ? :Rez;
-        symbol [ Strings %tmp.75 144 84 91 ];
+        symbol [ Strings %tmp.75 146 84 91 ];
         %tmp.75 = getv %tmp.74 :Strings;
-        symbol [ WeatherWindy %tmp.76 144 92 104 ];
+        symbol [ WeatherWindy %tmp.76 146 92 104 ];
         %tmp.76 = getv %tmp.75 :WeatherWindy;
         %tmp.77 = invoke %tmp.71 %tmp.72(%tmp.76);
         ret %tmp.77;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_50_144_107_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_107_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_144_8_144_107_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 145 8 ]
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_103_if_stmt:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_50_146_107_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_8_146_107_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_146_8_146_107_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 147 8 ]
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_8_147_103_if_stmt:
         %tmp.78 = lgetv %condition;
-        symbol [ condition %tmp.78 145 12 21 ];
-        symbol [ Weather %tmp.79 145 25 32 ];
+        symbol [ condition %tmp.78 147 12 21 ];
+        symbol [ Weather %tmp.79 147 25 32 ];
         %tmp.79 = getm $.Toybox.Weather;
-        symbol [ CONDITION_FOG %tmp.80 145 33 46 ];
+        symbol [ CONDITION_FOG %tmp.80 147 33 46 ];
         %tmp.80 = getv %tmp.79 :CONDITION_FOG;
         %tmp.81 = eq %tmp.78 %tmp.80;
-        bf %tmp.81 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_103_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_103_if_true:
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_48_145_103_start:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 145 50 ]
-        symbol [ WatchUi %tmp.82 145 57 64 ];
+        bf %tmp.81 @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_8_147_103_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_8_147_103_if_true:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_48_147_103_start:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 147 50 ]
+        symbol [ WatchUi %tmp.82 147 57 64 ];
         %tmp.82 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.83 145 65 77 ];
+        symbol [ loadResource %tmp.83 147 65 77 ];
         %tmp.83 = getv function %tmp.82 :loadResource;
-        symbol [ Rez %tmp.85 145 78 81 ];
+        symbol [ Rez %tmp.85 147 78 81 ];
         %tmp.85 = getv ? :Rez;
-        symbol [ Strings %tmp.86 145 82 89 ];
+        symbol [ Strings %tmp.86 147 82 89 ];
         %tmp.86 = getv %tmp.85 :Strings;
-        symbol [ WeatherFog %tmp.87 145 90 100 ];
+        symbol [ WeatherFog %tmp.87 147 90 100 ];
         %tmp.87 = getv %tmp.86 :WeatherFog;
         %tmp.88 = invoke %tmp.82 %tmp.83(%tmp.87);
         ret %tmp.88;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_48_145_103_stop:
-        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_103_if_end;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_145_8_145_103_if_end:
-[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 146 8 ]
-        symbol [ WatchUi %tmp.89 146 15 22 ];
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_48_147_103_stop:
+        goto @D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_8_147_103_if_end;
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_147_8_147_103_if_end:
+[ "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc" 148 8 ]
+        symbol [ WatchUi %tmp.89 148 15 22 ];
         %tmp.89 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.90 146 23 35 ];
+        symbol [ loadResource %tmp.90 148 23 35 ];
         %tmp.90 = getv function %tmp.89 :loadResource;
-        symbol [ Rez %tmp.92 146 36 39 ];
+        symbol [ Rez %tmp.92 148 36 39 ];
         %tmp.92 = getv ? :Rez;
-        symbol [ Strings %tmp.93 146 40 47 ];
+        symbol [ Strings %tmp.93 148 40 47 ];
         %tmp.93 = getv %tmp.92 :Strings;
-        symbol [ WeatherNA %tmp.94 146 48 57 ];
+        symbol [ WeatherNA %tmp.94 148 48 57 ];
         %tmp.94 = getv %tmp.93 :WeatherNA;
         %tmp.95 = invoke %tmp.89 %tmp.90(%tmp.94);
         ret %tmp.95;
-D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_136_63_147_4_stop:
+D__2__Development_0__Github_Personal_Projects_Garmin_Watch_Face_MommersMilitary_source_MommersMilitaryView_mc_138_63_149_4_stop:
     }
-    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 149; @symbol_functiondef = [onShow,149,13,19]; ]
+    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 151; @symbol_functiondef = [onShow,151,13,19]; ]
     function onShow() as Void {
     }
-    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 150; @symbol_functiondef = [onHide,150,13,19]; ]
+    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 152; @symbol_functiondef = [onHide,152,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 151; @symbol_functiondef = [onExitSleep,151,13,24]; ]
+    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 153; @symbol_functiondef = [onExitSleep,153,13,24]; ]
     function onExitSleep() as Void {
     }
-    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 152; @symbol_functiondef = [onEnterSleep,152,13,25]; ]
+    [ @file = "D:\2. Development\0. Github\Personal Projects\Garmin-Watch-Face\MommersMilitary\source\MommersMilitaryView.mc"; @line = 154; @symbol_functiondef = [onEnterSleep,154,13,25]; ]
     function onEnterSleep() as Void {
     }
 }
